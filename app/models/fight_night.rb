@@ -1,0 +1,2 @@
+class FightNight < ApplicationRecord
+end
