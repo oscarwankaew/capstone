@@ -46,3 +46,10 @@ group :development do
   # gem "spring"
 end
 
+gem "jb"
+
+gem "seed_dump"
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'jwt'
