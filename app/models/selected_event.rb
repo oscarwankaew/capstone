@@ -1,0 +1,2 @@
+class SelectedEvent < ApplicationRecord
+end
