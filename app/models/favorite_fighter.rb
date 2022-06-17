@@ -1,0 +1,2 @@
+class FavoriteFighter < ApplicationRecord
+end
