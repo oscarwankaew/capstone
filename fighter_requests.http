@@ -6,3 +6,46 @@ GET http://localhost:3000/fighters.json
 ### SHOW action
 
 GET http://localhost:3000/fighters/1.json
+
+
+### CREATE action
+
+POST http://localhost:3000/fighters.json
+Content-Type: application/json
+
+{
+  "name": "Umar Nurmagomedov",
+  "age": "24",
+  "height": "5'8",
+  "weight": "135",
+  "reach": "69",
+  "stance": "Orthodox",
+  "image": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-03/d57195df-5f24-4d29-a65d-84d4f4bf3d37%252FNURMAGOMEDOV_UMAR_L_03-05.png?itok=erMJibXF",
+  "video": "https://youtu.be/kixMWClmP80",
+  "win": "14",
+  "loss": "0",
+  "draw": "0",
+  "organization": "UFC"
+}
+
+### UPDATE action
+
+PATCH http://localhost:3000/fighters/13.json
+Content-Type: application/json
+
+{
+  "name": "Nate Maness",
+  "age": "2",
+  "height": "5'8",
+  "weight": "134",
+  "reach": "69",
+  "stance": "Southpaw",
+  "win": "15",
+  "loss": "2",
+  "draw": "2",
+  "organization": "UFC"
+}
+ 
+ 
+### DELETE action
+DELETE http://localhost:3000/fighters/13.json

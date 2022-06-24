@@ -11,18 +11,18 @@ class FightersController < ApplicationController
 
   def create
     fighter = Fighter.new(
-      name: params[:name],
-      age: params[:age],
-      height: params[:height],
-      weight: params[:weight],
-      reach: params[:reach],
-      stance: params[:stance],
-      image: params[:image],
-      video: params[:video],
-      win: params[:win],
-      loss: params[:loss],
-      draw: params[:draw],
-      organization: params[:organization],
+      name: params["name"],
+      age: params["age"],
+      height: params["height"],
+      weight: params["weight"],
+      reach: params["reach"],
+      stance: params["stance"],
+      image: params["image"],
+      video: params["video"],
+      win: params["win"],
+      loss: params["loss"],
+      draw: params["draw"],
+      organization: params["organization"],
     )
     fighter.save
     render json: fighter.as_json
@@ -40,11 +40,17 @@ class FightersController < ApplicationController
     fighter.image = params["image"] || fighter.image
     fighter.video = params["video"] || fighter.video
     fighter.win = params["win"] || fighter.win
-    figther.loss = params["loss"] || fighter.loss
+    fighter.loss = params["loss"] || fighter.loss
     fighter.draw = params["draw"] || fighter.draw
     fighter.organization = params["organization"] || fighter.organization
 
     fighter.save
     render json: fighter.as_json
+  end
+
+  def destroy
+    fighter = Fighter.find_by(id: params[:id])
+    fighter.destroy
+    render json: { message: "Selected fighter has been deleted" }
   end
 end
