@@ -1,0 +1,4 @@
+### INDEX action
+
+GET http://localhost:3000/fighters.json
+
