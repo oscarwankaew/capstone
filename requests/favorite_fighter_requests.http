@@ -1,0 +1,22 @@
+### INDEX action
+
+GET http://localhost:3000/favorite_fighters.json
+
+
+### SHOW action
+
+GET http://localhost:3000/favorite_fighters/1.json
+
+
+### CREATE action
+
+POST http://localhost:3000/favorite_fighters.json
+Content-Type: application/json
+
+{
+
+}
+
+## DESTROY action
+
+DELETE http://localhost:3000/favorite_fighters/1.json
