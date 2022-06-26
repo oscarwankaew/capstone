@@ -1,0 +1,20 @@
+### INDEX action
+
+GET http://localhost:3000/selected_events.json
+
+### SHOW action
+
+GET http://localhost:3000/selected_events/1.json
+
+### CREATE action
+
+POST http://localhost:3000/selected_events.json
+Content-Type: application/json
+
+{
+
+}
+
+### DESTROY action
+
+DELETE http://localhost:3000/selected_events/1.json

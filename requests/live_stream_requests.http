@@ -1,0 +1,20 @@
+### INDEX action
+
+GET http://localhost:3000/live_streams.json
+
+### SHOW action
+
+GET http://localhost:3000/live_streams/1.json
+
+### CREATE action
+
+POST http://localhost:3000/live_streams.json
+Content-Type: application/json
+
+{
+
+}
+
+### DESTROY action
+
+DELETE http://localhost:3000/live_streams/1.json
