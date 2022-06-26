@@ -14,7 +14,11 @@ POST http://localhost:3000/events.json
 Content-Type: application/json
 
 {
-
+"title": "UFC 276",
+"date": "July 2, 2022",
+"time": "7:00 pm",
+"location": "T-Mobile Arena, Las Vegas, Nevada, USA",
+"event_image": "https://espnpressroom.com/us/files/2022/06/UFC_276_LasVegas_EndCard_1920x1080_sm.jpg"
 }
 
 
