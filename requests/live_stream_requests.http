@@ -12,9 +12,9 @@ POST http://localhost:3000/live_streams.json
 Content-Type: application/json
 
 {
-
+  "url": "https://www.youtube.com/user/UFC/videos"
 }
 
 ### DESTROY action
 
-DELETE http://localhost:3000/live_streams/1.json
+DELETE http://localhost:3000/live_streams/3.json
