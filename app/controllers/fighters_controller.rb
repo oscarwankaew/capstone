@@ -51,6 +51,6 @@ class FightersController < ApplicationController
   def destroy
     fighter = Fighter.find_by(id: params[:id])
     fighter.destroy
-    render json: { message: "Selected fighter has been deleted" }
+    render json: { message: "Selected fighter has been successfully deleted" }
   end
 end

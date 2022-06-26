@@ -5,7 +5,7 @@ GET http://localhost:3000/fighters.json
 
 ### SHOW action
 
-GET http://localhost:3000/fighters/1.json
+GET http://localhost:3000/fighters/2.json
 
 
 ### CREATE action
