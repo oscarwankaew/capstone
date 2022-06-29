@@ -12,7 +12,8 @@ POST http://localhost:3000/fight_nights.json
 Content-Type: application/json
 
 {
-
+ "fighter_id": 22,
+ "event_id": 3
 }
 
 ### DESTROY action

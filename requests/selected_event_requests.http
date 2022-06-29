@@ -12,7 +12,8 @@ POST http://localhost:3000/selected_events.json
 Content-Type: application/json
 
 {
-
+ "user_id": 12,
+ "event_id": 3
 }
 
 ### DESTROY action

@@ -1,12 +1,12 @@
 class FavoriteFightersController < ApplicationController
   def index
     favorite_fighters = FavoriteFighter.all
-    render json: { message: "working?" }
+    render json: favorite_fighters.as_json
   end
 
   def show
     favorite_fighter = FavoriteFighter.find_by(id: params[:id])
-    render json: { message: "working?" }
+    render json: favorite_fighter.as_json
   end
 
   def create
@@ -15,7 +15,7 @@ class FavoriteFightersController < ApplicationController
       fighter_id: params["fighter_id"],
     )
     favorite_fighter.save
-    render json: { message: "working?" }
+    render json: favorite_fighter.as_json
   end
 
   def destroy

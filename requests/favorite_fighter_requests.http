@@ -14,7 +14,8 @@ POST http://localhost:3000/favorite_fighters.json
 Content-Type: application/json
 
 {
-
+ "user_id": 7,
+ "fighter_id": 15
 }
 
 ## DESTROY action
