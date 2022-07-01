@@ -19,8 +19,10 @@ class EventsController < ApplicationController
     )
     if event.save
       @event = event
-      render template: "events/show"
+    else
+      render json: { errors: product.errors.full_messages }, status: :expectation_failed
     end
+    render template: "events/show"
   end
 
   def destroy
