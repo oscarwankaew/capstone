@@ -1,0 +1,8 @@
+{
+  id: user.id,
+  timezone: user.timezone,
+  selected_events: user.selected_events,
+  favorite_fighters: user.favorite_fighters,
+  created_at: user.created_at,
+  updated_at: user.updated_at,
+}

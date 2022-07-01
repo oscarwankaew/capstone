@@ -26,6 +26,8 @@ class FightersController < ApplicationController
     )
     if fighter.save
       @fighter = fighter
+    else
+      render json: { errors: product.errors.full_messages }, status: :expectation_failed
     end
     render template: "fighters/show"
   end
@@ -48,6 +50,8 @@ class FightersController < ApplicationController
 
     if fighter.save
       @fighter = fighter
+    else
+      render json: { errors: product.errors.full_messages }, status: :expectation_failed
     end
     render template: "fighters/show"
   end

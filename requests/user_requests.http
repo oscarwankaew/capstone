@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ### Users SHOW action
 
-GET http://localhost:3000/users/12.json
+GET http://localhost:3000/users/7.json
 
 ### Sessions create (login)
 POST http://localhost:3000/sessions.json
