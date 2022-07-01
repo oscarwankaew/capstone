@@ -1,12 +1,12 @@
 class EventsController < ApplicationController
   def index
-    events = Event.all
-    render json: events.as_json
+    @events = Event.all
+    render template: "events/index"
   end
 
   def show
-    event = Event.find_by(id: params[:id])
-    render json: event.as_json
+    @event = Event.find_by(id: params[:id])
+    render template: "events/show"
   end
 
   def create
@@ -17,8 +17,10 @@ class EventsController < ApplicationController
       location: params["location"],
       event_image: params["event_image"],
     )
-    event.save
-    render json: event.as_json
+    if event.save
+      @event = event
+      render template: "events/show"
+    end
   end
 
   def destroy
