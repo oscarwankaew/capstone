@@ -1,0 +1,6 @@
+@fighters.map do |fighter|
+  {
+    id: fighter.id,
+    url: fighter_url(fighter, format: :json)
+  }
+end
