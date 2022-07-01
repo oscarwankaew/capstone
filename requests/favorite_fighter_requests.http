@@ -1,23 +1,26 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNjU2Nzg4MTk4fQ.KrXvbEffuf7tJRN92erAjhKBFnw6uFZVogEXbHwnwGE 
+
 ### INDEX action
 
 GET http://localhost:3000/favorite_fighters.json
-
+Authorization: Bearer {{jwt}}
 
 ### SHOW action
 
-GET http://localhost:3000/favorite_fighters/2.json
-
+GET http://localhost:3000/favorite_fighters/15.json
+Authorization: Bearer {{jwt}}
 
 ### CREATE action
 
 POST http://localhost:3000/favorite_fighters.json
 Content-Type: application/json
+Authorization: Bearer {{jwt}}
 
 {
- "user_id": 7,
  "fighter_id": 15
 }
 
 ### DESTROY action
 
-DELETE http://localhost:3000/favorite_fighters/18.json
+DELETE http://localhost:3000/favorite_fighters/19.json
+Authorization: Bearer {{jwt}}
