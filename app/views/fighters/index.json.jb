@@ -1,6 +1,1 @@
-@fighters.map do |fighter|
-  {
-    id: fighter.id,
-    url: fighter_url(fighter, format: :json)
-  }
-end
+render partial: "fighters/fighters", collection: @fighters, as: :fighter

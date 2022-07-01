@@ -1,12 +1,12 @@
 class FightersController < ApplicationController
   def index
-    fighters = Fighter.all
-    render json: fighters.as_json
+    @fighters = Fighter.all
+    render template: "fighters/index"
   end
 
   def show
-    fighter = Fighter.find_by(id: params[:id])
-    render json: fighter.as_json
+    @fighter = Fighter.find_by(id: params[:id])
+    render template: "fighters/show"
   end
 
   def create
@@ -24,8 +24,10 @@ class FightersController < ApplicationController
       draw: params["draw"],
       organization: params["organization"],
     )
-    fighter.save
-    render json: fighter.as_json
+    if fighter.save
+      @fighter = fighter
+    end
+    render template: "fighters/show"
   end
 
   def update
@@ -44,8 +46,10 @@ class FightersController < ApplicationController
     fighter.draw = params["draw"] || fighter.draw
     fighter.organization = params["organization"] || fighter.organization
 
-    fighter.save
-    render json: fighter.as_json
+    if fighter.save
+      @fighter = fighter
+    end
+    render template: "fighters/show"
   end
 
   def destroy

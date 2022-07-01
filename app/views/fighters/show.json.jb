@@ -1,5 +1,1 @@
-{
-  id: @fighter.id,
-  created_at: @fighter.created_at,
-  updated_at: @fighter.updated_at
-}
+render "fighters/fighters", fighter: @fighter

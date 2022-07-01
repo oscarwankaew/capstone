@@ -1,0 +1,18 @@
+{
+  id: fighter.id,
+  name: fighter.name,
+  age: fighter.age,
+  height: fighter.height,
+  weight: fighter.weight,
+  reach: fighter.reach,
+  stance: fighter.stance,
+  image: fighter.image,
+  video: fighter.video,
+  win: fighter.win,
+  loss: fighter.loss,
+  draw: fighter.draw,
+  organization: fighter.organization,
+  events: fighter.events,
+  created_at: fighter.created_at,
+  updated_at: fighter.updated_at,
+}
