@@ -1,0 +1,1 @@
+render "favorite_fighters/favorite_fighters", favorite_fighter: @favorite_fighter

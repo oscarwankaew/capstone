@@ -1,8 +1,21 @@
 {
   id: user.id,
+  name: user.name,
+  email: user.email,
   timezone: user.timezone,
-  selected_events: user.selected_events,
-  favorite_fighters: user.favorite_fighters,
+  selected_events: user.selected_events.map do |selected_event|
+    {
+      id: selected_event.id,
+      event: selected_event.event,
+    }
+  end,
+  favorite_fighters: user.favorite_fighters.map do |favorite_fighter|
+    {
+      id: favorite_fighter.id,
+      fighter: favorite_fighter.fighter,
+    }
+  end,
+
   created_at: user.created_at,
   updated_at: user.updated_at,
 }

@@ -4,6 +4,8 @@
   date: event.date,
   time: event.time,
   location: event.location,
+  time_format: event.time_format,
+  timezone_format: event.timezone_format,
   event_image: event.event_image,
   fighters: event.fighters,
   live_streams: event.live_streams,

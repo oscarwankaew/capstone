@@ -21,6 +21,16 @@ Content-Type: application/json
 "event_image": "https://espnpressroom.com/us/files/2022/06/UFC_276_LasVegas_EndCard_1920x1080_sm.jpg"
 }
 
+### UPDATE action
+
+PATCH http://localhost:3000/events/2.json
+Content-Type: application/json
+
+{
+  "time_format": "2022-06-25 19:00",
+  "timezone_format": "US/Pacific"
+}
+
 
 ### DESTROY action
 

@@ -2,13 +2,13 @@ class FavoriteFightersController < ApplicationController
   before_action :authenticate_user
 
   def index
-    favorite_fighters = current_user.favorite_fighters
-    render json: favorite_fighters.as_json
+    @favorite_fighters = current_user.favorite_fighters
+    render template: "favorite_fighters/index"
   end
 
   def show
-    favorite_fighter = current_user.favorite_fighters.find_by(id: params[:id])
-    render json: favorite_fighter.as_json
+    @favorite_fighter = current_user.favorite_fighters.find_by(id: params[:id])
+    render template: "favorite_fighters/show"
   end
 
   def create
@@ -16,8 +16,12 @@ class FavoriteFightersController < ApplicationController
       user_id: current_user.id,
       fighter_id: params["fighter_id"],
     )
-    favorite_fighter.save
-    render json: favorite_fighter.as_json
+    if favorite_fighter.save
+      @favorite_fighter = favorite_fighter
+    else
+      render json: { errors: favorite_fighter.errors.full_messages }, status: :expectation_failed
+    end
+    render template: "favorite_fighters/show"
   end
 
   def destroy

@@ -1,0 +1,1 @@
+render partial: "favorite_fighters/favorite_fighters", collection: @favorite_fighters, as: :favorite_fighter

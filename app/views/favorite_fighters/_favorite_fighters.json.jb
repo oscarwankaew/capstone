@@ -1,0 +1,17 @@
+{
+  id: favorite_fighter.id,
+  name: favorite_fighter.fighter.name,
+  age: favorite_fighter.fighter.age,
+  height: favorite_fighter.fighter.height,
+  weight: favorite_fighter.fighter.weight,
+  reach: favorite_fighter.fighter.reach,
+  stance: favorite_fighter.fighter.stance,
+  image: favorite_fighter.fighter.image,
+  video: favorite_fighter.fighter.video,
+  win: favorite_fighter.fighter.win,
+  loss: favorite_fighter.fighter.loss,
+  draw: favorite_fighter.fighter.draw,
+  organization: favorite_fighter.fighter.organization,
+  created_at: favorite_fighter.created_at,
+  updated_at: favorite_fighter.updated_at,
+}

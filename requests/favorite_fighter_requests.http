@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNjU2Nzg4MTk4fQ.KrXvbEffuf7tJRN92erAjhKBFnw6uFZVogEXbHwnwGE 
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNjU3MjI2MDYxfQ.Ys9VqjNRMXgci_i6LlVTYsd_cR_W2D6GHMfMlgGQ2fA 
 
 ### INDEX action
 
@@ -22,5 +22,5 @@ Authorization: Bearer {{jwt}}
 
 ### DESTROY action
 
-DELETE http://localhost:3000/favorite_fighters/19.json
+DELETE http://localhost:3000/favorite_fighters/22.json
 Authorization: Bearer {{jwt}}

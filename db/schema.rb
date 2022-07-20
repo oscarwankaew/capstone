@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_17_201214) do
+ActiveRecord::Schema[7.0].define(version: 2022_07_13_204422) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -22,6 +22,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_17_201214) do
     t.string "event_image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "time_format"
+    t.string "timezone_format"
   end
 
   create_table "favorite_fighters", force: :cascade do |t|

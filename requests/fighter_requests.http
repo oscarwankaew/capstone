@@ -30,11 +30,11 @@ Content-Type: application/json
 
 ### UPDATE action
 
-PATCH http://localhost:3000/fighters/2.json
+PATCH http://localhost:3000/fighters/4.json
 Content-Type: application/json
 
 {
-  "image": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2022-01/3d75a594-27a1-4c19-875a-8d7d4dc17b42%252FNGANNOU_FRANCIS_L_BELT_01-22.png?itok=EcfIjUew"
+  "image": "https://dmxg5wxfqgb4u.cloudfront.net/styles/athlete_bio_full_body/s3/2021-06/GAMROT_MATEUSZ_L_04-10.png?itok=cpq3LKCx"
 }
  
  
